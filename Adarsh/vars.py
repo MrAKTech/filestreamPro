@@ -3,7 +3,10 @@ import os
 from os import getenv, environ
 from dotenv import load_dotenv
 
-
+load_dotenv()
+bot_name = "Fɪʟᴇ2Lɪɴᴋ Bᴏᴛ"
+bisal_channel = "https://telegram.me/hdlinks4uu"
+bisal_grp = "https://t.me/movie_request_group_69"
 
 class Var(object):
     MULTI_CLIENT = False
