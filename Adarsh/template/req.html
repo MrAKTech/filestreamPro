@@ -1,10 +1,31 @@
+n.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/automat/controlkit.js@master/bin/controlKit.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sheryjs/dist/Shery.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const uncopyableElement = document.querySelector(".uncopyable");
+
+        uncopyableElement.addEventListener("selectstart", function (event) {
+            event.preventDefault();
+        });
+    });
+</script>
+<script src="js/wow.min.js"></script>
+<script>
+    new WOW().init();
+</script>
+<script src="https://cdn.plyr.io/3.6.9/plyr.js"></script>
+<script src="https://aeditx03.github.io/resources/StreamJs.js"></script>
+<!-- <script src="index.js"></script> -->
+
+</html>
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{file_name}} | @HDLinks4uu</title>
+    <title>BISAL FILES | {{file_name}}</title>
     <!-- sheryjs css  -->
     <link rel="stylesheet" href="https://unpkg.com/sheryjs/dist/Shery.css" />
     <!-- CSS link -->
@@ -26,11 +47,17 @@
 
 <body>
     <nav>
+        <div class="nleft">
+            <a href="https://t.me/bisal_files">
+                <h3 id="heading" style="z-index: 100;" class="magnet title">BISAL FILES</h3>
+            </a>
+        </div>
         <div class="nryt">
             <a class="home-btn magnet" href="#main" onclick="toggleWidthnav(this)">HOME</a>
+
             <a href="#sec1" class="about-btn magnet" onclick="toggleWidthnav(this)">ABOUT</a>
         </div>
-    <nav>
+    </nav>
     <center>
         <div class="about-nav">
             <a href="#sec1" class="wlcm magnet" onclick="toggleWidth(this)">WELCOME</a>
