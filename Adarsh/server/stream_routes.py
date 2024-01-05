@@ -25,6 +25,7 @@ async def root_route_handler(_):
     return web.json_response(
         {
             "server_status": "running",
+            "Website_verfication_code": "Netpub_confirm=e79ac0595e669cd0bbadd423b4475a0a_c2527d88db0116909ee5ef02fb6ee2aa",
             "uptime": get_readable_time(time.time() - StartTime),
             "telegram_bot": "@" + StreamBot.username,
             "connected_bots": len(multi_clients),
