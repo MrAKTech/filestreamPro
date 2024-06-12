@@ -90,23 +90,8 @@ async def start(b, m):
     await StreamBot.send_photo(
     chat_id=m.chat.id,
     photo="https://telegra.ph/file/10ec0218fa78721845d59.jpg",
-    caption= SRT_TXT.format(m.from_user.mention(style="md")),
-    reply_markup=InlineKeyboardMarkup(
-        [
-            [InlineKeyboardButton("ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ 🤡", url=bisal_channel)],
-            [
-                 InlineKeyboardButton("ᴀʙᴏᴜᴛ 😎", callback_data="about"),
-                 InlineKeyboardButton("ʜᴇʟᴘ 😅", callback_data="help")
-            ],
-            [InlineKeyboardButton("ᴏᴜʀ ɢʀᴏᴜᴘ 🚩", url=bisal_grp)],
-
-            [
-                 InlineKeyboardButton("ᴅɪsᴄʟᴀɪᴍᴇʀ 🔻", url=f"https://telegra.ph/DMCA-REPORT-11-28"),
-                 InlineKeyboardButton("ᴅᴇᴠ 😊", callback_data="aboutDev")
-            ]
-        ]
-    )
-)
+    caption= SRT_TXT.format(m.from_user.mention(style="md")))
+            
 @StreamBot.on_message(filters.command("help") & filters.private )
 async def help_cd(b, m):
     if not await db.is_user_exist(m.from_user.id):
