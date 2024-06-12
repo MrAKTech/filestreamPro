@@ -45,7 +45,6 @@ async def pm_text(bot, message):
     if content.startswith("/") or content.startswith("#"): return  # ignore commands and hashtags
     if user_id in OWNER_ID: return # ignore admins
     await message.reply_text("<b>ए दोस्त यहां मूवी नही मिलेगा ग्रुप में मांगो\nGo and send here 👉, @pm_moviez</b>")
-    )
 
             
 @StreamBot.on_message(filters.command("start") & filters.private )
