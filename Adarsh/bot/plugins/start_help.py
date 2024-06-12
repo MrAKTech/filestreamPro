@@ -32,10 +32,7 @@ else:
         )
 
 
-SRT_TXT = """<b>ʜᴇʟʟᴏ {}!,
-I ᴀᴍ Fɪʟᴇ ᴛᴏ Lɪɴᴋ Gᴇɴᴇʀᴀᴛᴏʀ Bᴏᴛ ᴡɪᴛʜ Cʜᴀɴɴᴇʟ sᴜᴘᴘᴏʀᴛ.
-
-Sᴇɴᴅ ᴍᴇ ᴀɴʏ ғɪʟᴇ ᴀɴᴅ ɢᴇᴛ ᴀ ᴅɪʀᴇᴄᴛ ᴅᴏᴡɴʟᴏᴀᴅ ʟɪɴᴋ ᴀɴᴅ sᴛʀᴇᴀᴍᴀʙʟᴇ ʟɪɴᴋ.!
+SRT_TXT = """<b>Hi, Please Farward Me any File you want to stream. Thanks!\nBefore sending file join Here - @HDLinks4uu
 ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ : <a href='https://t.me/badal6667Rai'>Bᴀᴅᴀʟ</a></b>"""
 
 @Client.on_message(filters.text)
