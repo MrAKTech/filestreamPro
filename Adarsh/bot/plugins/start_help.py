@@ -38,13 +38,13 @@ I ᴀᴍ Fɪʟᴇ ᴛᴏ Lɪɴᴋ Gᴇɴᴇʀᴀᴛᴏʀ Bᴏᴛ ᴡɪᴛʜ Cʜ�
 Sᴇɴᴅ ᴍᴇ ᴀɴʏ ғɪʟᴇ ᴀɴᴅ ɢᴇᴛ ᴀ ᴅɪʀᴇᴄᴛ ᴅᴏᴡɴʟᴏᴀᴅ ʟɪɴᴋ ᴀɴᴅ sᴛʀᴇᴀᴍᴀʙʟᴇ ʟɪɴᴋ.!
 ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ : <a href='https://t.me/badal6667Rai'>Bᴀᴅᴀʟ</a></b>"""
 
-@Client.on_message(filters.private & filters.text & filters.incoming)
+@Client.on_message(filters.text)
 async def pm_text(bot, message):
     user = message.from_user.first_name
     user_id = message.from_user.id
     if content.startswith("/") or content.startswith("#"): return  # ignore commands and hashtags
     if user_id in OWNER_ID: return # ignore admins
-    await message.reply_text("<b>ए दोस्त यहां मूवी नही मिलेगा ग्रुप में मांगो\nGo and send here 👉, @pm_moviez</b>")
+    await message.reply_text("<b>Wait!!\nPlease farward file to generate direct stream link & download link thanks.\n\n if u want movies\nGo and send here 👉, @pm_moviez</b>")
 
             
 @StreamBot.on_message(filters.command("start") & filters.private )
