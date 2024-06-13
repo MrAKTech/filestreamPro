@@ -9,6 +9,7 @@ from Adarsh.utils.human_readable import humanbytes
 from Adarsh.vars import Var
 from urllib.parse import quote_plus
 from pyrogram import filters, Client
+from pyrogram.types import WebAppInfo
 from pyrogram.errors import FloodWait, UserNotParticipant
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 #from utils_bot import get_shortlink
@@ -118,7 +119,8 @@ async def private_receive_handler(c: Client, m: Message):
             quote=True,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("sᴛʀᴇᴀᴍ 🔺", url=stream_link), #Stream Link
-                                                InlineKeyboardButton('ᴅᴏᴡɴʟᴏᴀᴅ 🔻', url=online_link)]]) #Download Link
+                                                InlineKeyboardButton('ᴅᴏᴡɴʟᴏᴀᴅ 🔻', url=online_link), #Download Link
+                                                InlineKeyboardButton('🧿 Wᴀᴛᴄʜ ᴏɴ ᴛᴇʟᴇɢʀᴀᴍ 🖥', web_app=WebAppInfo(url=web_link))]])
         )
     except FloodWait as e:
         print(f"Sleeping for {str(e.x)}s")
