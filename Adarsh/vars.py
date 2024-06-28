@@ -4,7 +4,7 @@ from os import getenv, environ
 from dotenv import load_dotenv
 
 load_dotenv()
-bot_name = "Fɪʟᴇ2Lɪɴᴋ Bᴏᴛ"
+bot_name = "MrAKFileToLinkbot"
 bisal_channel = "https://telegram.me/hdlinks4uu"
 bisal_grp = "https://t.me/movie_request_group_69"
 
